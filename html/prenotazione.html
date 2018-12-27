@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>prenotazione</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../css/prenot.css" rel="stylesheet">
+
+    <!--SORGENTI AGGIUNTE PER LA DATA-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+        $( "#data" ).datepicker();
+      } );
+    </script> 
+
+  </head>
+
+  <body class="second-page">
+      <a href="index.html"><img id="logo-2" src="../img/Logo.png" ></a>
+      
+      <div class="card"><h1 id="prenota">Prenota il tuo tavolo!</h1></div>
+      
+      <!--Container sx-->
+      <section class="container-sx">
+        <div id="ristoranti">I Nostri Ristoranti:</div>
+        <div id="mappa"><iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d47492.778795532!2d12.50795!3d41.929433!3m2!1i1024!2i768!4f13.1!2m1!1sthe+butcher+roma!5e0!3m2!1sit!2sit!4v1542629634068" width="300" height="480" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      </section>
+
+      <!--Container dx-->
+      <section class="container-dx">
+        <form name="formPren" id="formPren">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputNome" id="labelNome"><i class='far fa-address-book' style='font-size:90%'></i> Nome:</label>
+                <input type="text" class="form-control" placeholder="Mario"  id='nome' name="nome" size="15" maxlength="15" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCognome" id="labelCognome"><i class='far fa-address-book' style='font-size:90%'></i> Cognome:</label>
+                <input type="text" class="form-control" placeholder="Rossi" id='cognome' name="cognome" size="15" max="15" required>
+              </div>
+            </div>
+            <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputTel" id="labelTel"><i class='fas fa-phone' style='font-size:90%'></i> Tel:</label>
+                      <input type="tel" class="form-control" placeholder="+39.." id="telefono" size="15" maxlength="15" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail" id="labelEmail"><i class='fas fa-envelope' style='font-size:90%'></i> Email:</label>
+                      <input type="input" class="form-control" placeholder="MarioRossi@gmail.com" id="email" size="20" maxlength="20" required>
+                    </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputRistorante" id="labelRistorante"><i class='fas fa-map-marker-alt' style='font-size:90%'></i> Ristorante:</label>
+                <select class="form-control" id="ristorante">
+                    <option value="None">Via..</option>
+                    <option value="A">Via Michele di Lando, 13A, 00162 Roma RM</option>
+                    <option value="B">Via di Pietralata, 135, 00158 Roma RM</option>
+                    <option value="C">Via Nomentana, 647, 00141 Roma RM</option>
+                    <option value="D">Via Lampedusa, 2, 00141 Roma RM</option>
+                    <option value="E">Via Conca d'Oro, 122, 00141 Roma RM</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6"> <!-- Date input -->
+                <label class="control-label" id="labelData"><i class='far fa-calendar-alt' style='font-size:90%'></i> Data:</label>
+                <input type="date" class="form-control" id="data" name="data" placeholder="GG/MM/AAAA">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputOrario" id="labelOrario"><i class='far fa-clock' style='font-size:90%'></i> Orario:</label> 
+                    <select class="form-control" id="orario">
+                      <option value="niente">Ora..</option>
+                      <option value="1">20:30</option>
+                      <option value="2">21:30</option>
+                      <option value="3">22:30</option>
+                  </select>
+                </div>
+              <div class="form-group col-md-6">
+                    <label for="inputNPersone" id="labelNPersone"><i class='far fa-user' style='font-size:90%'></i> N. Persone:</label>
+                    <br>
+                      <select class="form-control" id="persone">
+                          <option value="0" selected>0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10+</option>
+                      </select>
+                  </div> 
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      </section>
+      
+
+      <!--Vari Script-->
+      <script src="../js/prenot.js"></script>
+      
+      
+  </body>

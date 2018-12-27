@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Progetto</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../css/panino.css" rel="stylesheet">
+
+    <script src="../js/panino.js"></script>
+    
+    
+
+    <!--Script vari-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+    <!--Script offerta..-->
+    <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+         $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+
+  </head>
+
+  <body class="panino-page" >
+        <div class="logo">
+            <a   href="index.html"><img id="logo_panino" src="../img/Logo.png" ></a>
+            <div class="card" id="indice">   
+
+                <div class="col-container">
+                  <h3><b>Scegli la carne</b></h3>
+                  <h5>puoi anche mischiare piu tipi... sentiti libero di sperimentare </h5>
+                  <div class="column">
+                    <img src="../img/manzo.png" alt="Avatar" style="width:35%">
+                    <h4><b>Manzo</b></h4> 
+                    <input class="cursore" value="Manzo" type="checkbox" id="myCheck_manzo" >        
+                  </div>
+                  <div class="column">                              
+                    <img src="../img/pollo.png" alt="Avatar" style="width:20%">
+                    <h4><b>Pollo</b></h4> 
+                    <input class="cursore" value="Pollo" type="checkbox" id="myCheck_pollo" > 
+                  </div>
+                  <div class="column">                                
+                    <img src="../img/porco.png" alt="Avatar" style="width:40%">
+                   <h4><b>Maiale</b></h4> 
+                   <input class="cursore" value="Maiale" type="checkbox" id="myCheck_maiale" >
+                  </div>
+                </div>
+
+                <div class="row1">
+                  <h3><b>Scegli il peso</b></h3>
+                  <div class="card1">
+                                             130g (6€):&emsp;<input class="cursore" type="checkbox" id="myCheck1" onclick="myFunction1()">
+                    &emsp;&emsp;&emsp;&emsp; 200g (8€): &emsp;<input class="cursore" type="checkbox" id="myCheck2" onclick="myFunction2()">
+                    &emsp;&emsp;&emsp;&emsp; 300g (10€): &emsp;<input class="cursore" type="checkbox" id="myCheck3" onclick="myFunction3()">
+                    &emsp;&emsp;&emsp;&emsp; 500g (14€): &emsp;<input class="cursore" type="checkbox" id="myCheck4" onclick="myFunction4()">
+                  </div>   
+                </div>
+
+                <div class="row-click">
+                  <div id="flip">Cliccami!!</div>
+                  <h4 id="panel">🍔 Puoi arricchire il tuo hamburger con ciò che preferisci..paghi SOLO la carne!! 🍔</h4>
+                  <br>
+                </div>
+
+                <div class="row2">
+                  <div class="column">
+                    <h4><b>Le verdure</b></h4> 
+                    <div class="container">
+                       <input class="cursore" type="checkbox" id="verdura1" value="Melanzane"> Melanzane
+                        <br>
+                        <input class="cursore" type="checkbox" id="verdura2" value="Zucchine">Zucchine
+                        <br>
+                        <input class="cursore" type="checkbox" id="verdura3" value="Funghi">Funghi 
+                        <br>
+                        <input class="cursore" type="checkbox" id="verdura4"value="Pomodori">Pomodori
+                        <br>
+                        <input class="cursore" type="checkbox" id="verdura5" value="Peperoni"> Peperoni 
+                    </div>
+                  </div>
+                  <div class="column">
+                    <h4><b>I formaggi</b></h4> 
+                    <div class="container">
+                      <input class="cursore" type="checkbox" id="formaggio1" value="Gorgonzola">Gorgonzola
+                      <br>
+                      <input class="cursore" type="checkbox" id="formaggio2" value="Cheddar">Cheddar
+                      <br>
+                      <input class="cursore" type="checkbox" id="formaggio3" value="Sottiletta">Sottiletta
+                      <br>
+                      <input class="cursore" type="checkbox" id="formaggio4" value="Crema di formaggio">Crema di formaggio
+                      <br>
+                      <input class="cursore" type="checkbox" id="formaggio5" value="Mozzarella di Bufala"> Mozzarella di Bufala 
+                    </div>
+                 </div>
+                 <div class="column">
+                    <h4><b>Le insalate</b></h4> 
+                    <div class="container">
+                      <input class="cursore" type="checkbox" id="insalata1" value="Lattuga"> Lattuga
+                      <br>
+                      <input class="cursore" type="checkbox" id="insalata2" value="Iceberg">Iceberg
+                      <br>
+                      <input class="cursore" type="checkbox" id="insalata3" value="Rucola">Rucola
+                      <br>
+                      <input class="cursore" type="checkbox" id="insalata4" value="Mista">Mista
+                      <br>
+                      <input class="cursore" type="checkbox" id="insalata5" value="Radicchio"> Radicchio
+                      </div>
+                  </div>
+                  <div class="row21">
+                    <div class="column">
+                      <h4><b>Extra</b></h4> 
+                      <div class="container">
+                        <input class="cursore" type="checkbox" id="extra1" value="Uovo">Uovo
+                        <br>
+                        <input class="cursore" type="checkbox" id="extra2" value="Bacon">Bacon
+                        <br>
+                        <input class="cursore" type="checkbox" id="extra3" value="Cipolla">Cipolla
+                        <br>
+                        <input class="cursore" type="checkbox" id="extra4" value="Guanciale">Guanciale
+                        <br>
+                        <input class="cursore" type="checkbox" id="extra5" value="Patè di olive"> Patè di olive 
+                    </div>
+                  </div>
+                  <div class="column">
+                    <h4><b>Le salse</b></h4> 
+                    <div class="container">
+                      <input class="cursore" type="checkbox" id="salsa1"  value="Ketchup"> Ketchup
+                      <br>
+                      <input class="cursore" type="checkbox" id="salsa2" value="Maionese">Maionese
+                      <br>
+                      <input class="cursore" type="checkbox" id="salsa3" value="Senape">Senape 
+                      <br>
+                      <input class="cursore" type="checkbox" id="salsa4" value="BBQ">BBQ
+                      <br>
+                      <input class="cursore" type="checkbox" id="salsa5" value="Tabasco"> Tabasco
+                    </div>
+                  </div>
+                  <br>
+                  <div class="column" id="email-cliente">
+                    <label for="inputNome" id="labelNome"><i class='far fa-address-book' style='font-size:90%'></i><strong> Nome e Cognome:</strong></label>
+                    <input type="text" class="form-control" placeholder="Mario Rossi"  id='nome' name="nome" size="30" maxlength="30" >
+                    <label for="inputEmail" id="labelEmail"><i class='fas fa-envelope' style='font-size:90%'></i><strong> Email: </strong></label>
+                    <input type="input" class="form-control" placeholder="MarioRossi@gmail.com" name='email' id="email" size="40" maxlength="40">
+                    <label for="inputRistorante" id="labelRistorante"><i class='fas fa-map-marker-alt' style='font-size:90%'></i><strong> Ristorante: </strong></label>
+                  <select class="form-control" id="ristorante">
+                    <option value="None">Via..</option>
+                    <option value="A">Via Michele di Lando, 13A, 00162 Roma RM</option>
+                    <option value="B">Via di Pietralata, 135, 00158 Roma RM</option>
+                    <option value="C">Via Nomentana, 647, 00141 Roma RM</option>
+                    <option value="D">Via Lampedusa, 2, 00141 Roma RM</option>
+                    <option value="E">Via Conca d'Oro, 122, 00141 Roma RM</option>
+                  </select>
+                  </div>
+                </div>
+                </div>
+              <div class="row3">
+                <input type="checkbox" id="check_finale" onclick="myFunction_finale()"> cliccami quando hai finito di completare il panino
+              <button type="submit" id="componi_but" style="visibility: hidden" onclick="resoconto();">Componi</button>
+              </div>
+            </div>
+          </div>
+  </body>

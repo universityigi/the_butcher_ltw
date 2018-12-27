@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('#myModal').modal({
+            backdrop: 'static',
+            keyboard: false
+          }); 
+          $('#casa').click(function(){
+              window.location.href='index.html';
+          });
+      });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="modal fade" id="myModal" role="dialog" style="display:block">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" style="text-align: center">🍔The Butcher🍔</h4>
+          </div>
+          <div class="modal-body">
+            <p>Il suo ordine &egrave; stato inviato, la direzione la ringrazia!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="casa" class="btn btn-default" data-dismiss="modal" style="background-color: #fed136">Home</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
+

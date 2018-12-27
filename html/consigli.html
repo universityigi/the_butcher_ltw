@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="../css/consigli.css" rel="stylesheet">
+    <link href="../css/agency.css" rel="stylesheet">
+    
+    <script>
+      function showMessage(){
+        if($('#idArea').val()==""){ 
+          alert("Riempire il campo");
+        }
+        else{ 
+          alert("Mail inviata correttamente!");
+        }
+      }
+    </script>
+  </head>
+
+  <body class="consigli_page">
+    <a  href="index.html"><img id="logo-home3" src="../img/Logo.png" ></a>
+    <div class="card">
+      <div class="chat-popup" id="myForm">
+        <form  class="form-container"  name="formEmail">
+          <h1 id="headers">Aiutaci a migliorare!</h1>
+          <h2 id="headers"><b>Cosa hai apprezzato di The Butcher? ..cosa cambieresti?</b></h2>
+          <textarea placeholder="Commenta.." name="messaggioArea" id="idArea" required></textarea>
+          <button type="submit" name="submit" value="invia" class="btn btn-primary btn-xl js-scroll-trigger" onclick="return showMessage();">Invia</button>
+         </form>
+      </div>
+    </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+
+

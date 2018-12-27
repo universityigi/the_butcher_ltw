@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Progetto</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a  class="navbar-brand js-scroll-trigger" href="#page-top"><img id="logo-1" src="../img/Logo.png" ></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Servizi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Storia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="riepilogo.html">Riepilogo Ordini</a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-heading ">The Butcher</div>
+          <div id="test">
+            <a id="but-ordina" class="btn btn-primary btn-xl js-scroll-trigger" href="#services">ORDINA</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Servizi</h2>
+          </div>
+        </div>
+        <div class="row text-center" onmouseover="return welcome_bibbi();">
+          <div class="col-md-6" id="col_left" >
+              <a href="prenotazione.html"><img  id="logo-servizi" src="../img/prenotaTav.png"></a>
+              <br>
+            <a href="prenotazione.html"  class="servizi-text">Prenota un tavolo..</a>
+            <p class="text-muted">...scopri la catena di ristoranti di THE BUTCHER e prenota un tavolo !   </p>
+          </div>
+          <div class="col-md-6" id="col_right" >
+              <a  href="panino.html"><img  id="logo-servizi" src="../img/takeaway.png"></a>
+              <br>
+            <a href="panino.html" class="servizi-text">Servizio da asporto..</a>
+            <p class="text-muted">...componi in anticipo il tuo panino ... dicci in quale ristorante preferisci ritirarlo e al resto ci pensiamo noi!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Un pò di Storia</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <a onmouseover="return eureka(testo1);" ><img id="id-carne" class="rounded-circle img-fluid" src="../img/carne.jpg" alt=""></a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Le Nostre Carni</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted" id="testo1" style="visibility:hidden" >Scegli la miglior selezione di carne 100% italiana che preferisci ... noi la macineremo sul momento per te  e comporremmo il burger proprio come lo hai immaginato... </p>
+                  </div> 
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <a onmouseover="return eureka(testo2);"><img id="id-contorni" class="rounded-circle img-fluid" src="../img/contorni.jpg" alt=""></a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>I Contorni</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted" id="testo2" style="visibility:hidden">Assapora le nostre gustosissime patatine fritte e accompagna i tuoi burger con il meglio dei nostri contorni ...</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <a onmouseover="return eureka(testo3);"><img id="id-salse" class="rounded-circle img-fluid" src="../img/salse.jpg" alt=""></a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Spezie e Salse</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted" id="testo3" style="visibility:hidden">scopri il gusto autentico dele nostre salse homemade preparate con  le ricette originarie che daranno ai vostri panini un gusto unico !!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="text-decoration:none;">
+                    <a href="consigli.html">
+                        <h4 id="id-consigli-btn">COSA
+                        <br>
+                        CONSIGLI?</h4>
+                      </a>
+                </div> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Il Team di Lavoro</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="team-member">
+              <img  id="rotazione180" class="mx-auto rounded-circle" src="../img/posh.png" alt="">
+              <h4>Francesco Scotti</h4>
+              <p class="text-muted">M: 1758391</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="team-member">
+              <img id="rotazione180" class="mx-auto rounded-circle" src="../img/sam.png" alt="">
+              <h4>Samuele Sabatucci</h4>
+              <p class="text-muted">M: 1745198</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p id="sapienza">Entrambi studenti, al terzo anno della facoltà di Ingegneria informatica ed automatica presso l'università di Roma, La Sapienza.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright"> &copy; Linguaggi e Tecnologie Web 2018/2019</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="lista-logo">
+                 <li class="list-inline-item">
+                   <a href="https://www.facebook.com/thebutcherofficial/">
+                    <i class='fab fa-facebook-square'  id="social-Logo" style='font-size:250%'></i>
+                   </a>
+                 </li>
+                 <li class="list-inline-item">
+                   <a href="https://www.instagram.com/thebutcher_official/">
+                    <i class='fab fa-instagram' id="social-Logo" style='font-size:250%'></i>
+                   </a>
+                 </li>
+                 <li class="list-inline-item">
+                  <a href="https://www.tripadvisor.it/Search?geo=187791&pid=3826&redirect=&startTime=1542885750398&uiOrigin=MASTHEAD&q=the%20butcher&supportedSearchTypes=find_near_stand_alone_query&enableNearPage=true&returnTo=https%253A__2F____2F__www__2E__tripadvisor__2E__it__2F__&searchSessionId=D22C4B56B1422162395C7E6E290527781542885747325ssid&social_typeahead_2018_feature=true&sid=D22C4B56B1422162395C7E6E290527781542885776342&ssrc=a">
+                    <i class='fab fa-tripadvisor' id="social-Logo"style='font-size:250%'></i>
+                  </a>
+                </li>
+               </ul> 
+             </div>
+        </div>
+      </div>
+    </footer>
+         
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../js/agency.min.js"></script>
+
+    <!--miei-->
+    <script src="../js/home.js"></script>
+    <script>
+      function welcome_bibbi(){
+        $('#col_left').delay().animate({"opacity": "1"}, 2000);
+        $('#col_right').delay().animate({"opacity": "1"}, 2000);
+        
+      }
+    </script>
+
+    <script>
+      function eureka(tmp){
+        tmp.style.visibility='visible';
+      }
+    </script>
+
+    <script>$('#test a').delay(1500).animate({"opacity": "1"}, 3000);</script>
+
+  </body>
+</html>

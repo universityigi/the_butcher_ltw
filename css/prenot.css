@@ -1,0 +1,114 @@
+.second-page {
+text-align: center;
+color: white;
+background-image: url("../img/prova.jpg");
+background-attachment: scroll;
+background-position: center;
+background-size: cover;
+padding-top: 50%;
+padding-left:  50%;
+}
+
+#logo-2{
+  width: 5.5%;
+  height: 10%;
+  top: 5%;
+  left: 7%;
+  position: absolute;
+}
+
+.logo{
+  width: 50%;
+  height: 47%;  
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 7%;
+  left: -18%;
+}
+
+#prenota{ 
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-style: initial;
+  font-size: 400%;
+  color: #fed136;
+}
+
+.card{
+  background-color: transparent;
+  position: absolute;
+  top:8%;
+  max-block-size: 50px;
+  right: 1%;
+  width: 70%;
+  height: 30%;
+}
+
+.active{
+  opacity: 1;
+  width: 100%;
+}
+/* ////////////////////////////////////// */
+
+.container-sx{
+  width: 50%;
+  height: 50%;  
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 23%;
+  left: 6%;
+  text-align: left;
+  
+}
+
+#ristoranti{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#fed136;
+  font-size: 120%;
+  margin-bottom: 0.5rem;
+  
+}
+
+#mappa{
+  border-radius: 50%;
+  border-color: gold;
+  
+}
+
+
+.container-dx{
+  max-width: 50%;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 5%;
+  width: 50%;
+  height: 50%;  
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 30%;
+  right: 10%;
+  text-align: center;
+}
+
+#labelNome, #labelCognome, #labelTel, #labelEmail{
+  color:#fed136;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 120%;
+}
+
+#labelNPersone, #labelRistorante, #labelData , #labelOrario{
+  color:#fed136;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 120%;
+}
+
+
+
+
+
+
+
+
+  
